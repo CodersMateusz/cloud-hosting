@@ -28,7 +28,7 @@ html {
 
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.5;
   color: var(--color-body);
 }
@@ -215,7 +215,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -306,6 +306,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -461,7 +462,7 @@ a {
 }
 
 .quote__author {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
   font-style: normal;
   margin-bottom: 0;
@@ -470,7 +471,7 @@ a {
 .quote__company {
   color: var(--color-headings);
   opacity: 0.4;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: normal;
 }
 
@@ -517,6 +518,7 @@ a {
 
 .testimonial__image {
   position: relative;
+  margin: 0 3rem;
 }
 
 .testimonial__image > img {
@@ -527,6 +529,11 @@ a {
   position: absolute;
   top: 3rem;
   right: -32px;
+}
+
+.testimonial .quote {
+  font-size: 110%;
+  margin: 2rem 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -549,6 +556,10 @@ a {
 .callout--primary {
   background: var(--color-primary);
   color: #fff;
+}
+
+.callout-signup {
+  transform: translateY(5rem);
 }
 
 .callout__heading {
@@ -640,12 +651,12 @@ a {
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 90%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 97%);
 }
 
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0, 100% 90%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 97%, 0% 100%);
 }
 
 /* Navigation Bar */
@@ -739,8 +750,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
