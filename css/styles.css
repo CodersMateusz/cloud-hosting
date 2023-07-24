@@ -10,7 +10,6 @@
 }
 
 /* Typography */
-
 *,
 *::after,
 *::before {
@@ -427,7 +426,6 @@ a {
 }
 
 /* Media */
-
 .media {
   display: flex;
   margin-bottom: 4rem;
